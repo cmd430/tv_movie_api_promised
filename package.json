@@ -1,0 +1,11 @@
+{
+  "name": "tv_movie_api_promised",
+  "version": "1.0.0",
+  "description": "EZTV api client, returns promises",
+  "main": "index.js",
+  "author": "Bradley 'cmd430' Treweek",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.72.0"
+  }
+}
