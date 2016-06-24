@@ -28,7 +28,7 @@ module.exports = ( apiURL ) => {
 	function getPage( type, page, sort, genre ) {
 		return new Promise( function( resolve, reject ){
 			let sort = sort || '';
-			let sort = genre || 'all';
+			let genre = genre || 'all';
 			let uri = apiURL + '/' + type + '/' + page + '?sort=' + sort + '&genre=' + genre;
 			promisedRequest( uri )
 			.then( function( results ){
@@ -68,8 +68,8 @@ module.exports = ( apiURL ) => {
 	//TODO: Search
 	
 	return {
-		getShows: getShows,
-		getShow: getShow,
+		getPage: getPage,
+		getItem: getItem,
 		getItemGroup: getItemGroup
 	}
 	
